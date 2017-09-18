@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendar</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link href="css/mobiscroll.css" rel="stylesheet" />
+    <link href="css/mobiscroll_date.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="month">
+        <div class="month-item first-month"></div>
+        <div class="month-item"></div>
+        <div class="month-item"></div>
+    </div>
+    <div class="day"></div>
+    <div class="clock">
+        <div class="clocklab">时刻</div>
+        <input id="clockscroll" type="text" placeholder="请输入时间">
+    </div>
+    <div class="foot">
+        <div class="foot-btn"><a>返 回</a></div>
+        <div class="foot-btn"><a>确 定</a></div>
+    </div>
+
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/mobiscroll_date.js"></script> 
+    <script src="js/mobiscroll.js"></script> 
+    <script>
+        $("#clockscroll").mobiscroll().time({
+            theme: "android-ics light",
+            lang: 'zh',
+            display:'modal',
+            timeFormat:'HH:ii',
+            timeWheels:'HHii'
+        });
+    </script>
+</body>
+</html>

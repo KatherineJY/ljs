@@ -1,0 +1,119 @@
+/*-------------body--------------*/
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*-------------body--------------*/
+
+/*----------header-----------*/
+.header{
+    width:100%;
+    height:4rem;
+    text-align:center;
+    font-size:2rem;
+    line-height:4rem;
+}
+/*----------header-----------*/
+
+
+/*----------content-block-----------*/
+.content-block{
+    width: 100%;
+    height: calc( 100% - 4rem );
+    box-sizing: border-box;
+}
+/*----------content-block-----------*/
+
+/*------------sort---------------*/
+.sort-control{
+    width: 100%;
+    height: 2.6rem;
+    padding:1rem 1.2rem 0rem 1.2rem;
+    box-sizing: border-box;
+    display: table;
+    font-size: 1.4rem;
+}
+.sort-choice{
+    width: 20%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sort-on{
+    color:rgba(220, 96, 22,1);
+    border-bottom: 5px solid rgba(220, 96, 22,1);
+}
+/*------------sort---------------*/
+
+/*---------info-------------------*/
+.info-holder{
+    width:100%;
+    height:calc(100% - 2.6rem);
+    overflow: scroll;
+}
+.info{
+    width:100%;
+    height: 16.5rem;
+    border-top:2px solid #eee;
+    box-sizing: border-box;
+    padding: 1.2rem 1rem;
+}
+.info-pic{
+    width:10rem;
+    height:10rem;
+    float:left;
+    background: grey;
+}
+.info-word{
+    width: calc(100% - 11rem);
+    height:10rem;
+    float:left;
+    margin-left: 1rem;
+}
+.good-name{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.good-detail{
+    font-size: 1.2rem;
+    color:grey;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-size: 1.2rem;
+    color:rgba(220, 96, 22,1);
+}
+/*----------info-----------------*/
+
+/*-------control-btn------------*/
+.controllers{
+    width: 100%;
+    padding: 1rem 0;
+    height:4.5rem;
+    box-sizing: border-box;
+    float:left;
+}
+.control{
+    width: 30%;
+    height:2.5rem;
+    border-radius:1.5rem;
+    border:2px solid rgba(220, 96, 22,1);
+    float:left;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color:rgba(220, 96, 22,1);
+}
+.control:nth-child(n+2){
+    margin-left:4%;
+}
+/*-------control-btn------------*/
+

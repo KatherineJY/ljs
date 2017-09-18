@@ -1,0 +1,242 @@
+/*-------------body--------------*/
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+/*-------------body--------------*/
+
+/*-------------nav---------------*/
+.nav{
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    top:0;
+    background: rgba(128,128,128,0.8);
+    box-sizing: border-box;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+    z-index: 1;
+}
+.search-icon{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.search-icon img{
+    height: 100%;
+}
+.list-icon{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-icon img{
+    height: 100%;
+}
+.search-holder{
+    width:calc( 100% - 8.6rem );
+    height: 100%;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem 0.5rem 1.2rem;
+    vertical-align: middle;
+}
+.search-holder input{
+    margin-left: 1rem;
+    width: calc( 100% - 6rem );
+    height: 100%;
+    background: transparent;
+    border: 0px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4rem;
+}
+.catagory{
+    width: 4rem;
+    height: 100%;
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    background: linear-gradient(-45deg,#000 0.5rem,transparent 0);
+}
+.catagory-list{
+    width:6rem;
+    height:12rem;
+    position: relative;
+    top:0;
+    left:-0.8rem;
+    background: rgba(255,255,255,0.8);
+    border: 0.5px solid rgba(0,0,0,0.4);
+    display: none;
+}
+.catagory-item{
+    box-sizing: border-box;
+    width: 100%;
+    height:3rem;
+    border: 0.5px solid rgba(0,0,0,0.4);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+/*-------------nav---------------*/
+
+/*----------banner--------------*/
+
+/*----------banner--------------*/
+.banner-holder{
+    width: 100%;
+    height:18rem;
+    overflow: hidden;
+    position: relative;
+}
+.banner-list{
+    width: 400%;
+    height: 100%;
+    background:pink;
+    position: relative;
+    font-size: 5rem;
+}
+.banner-list::after{
+    clear: both;
+    content: "";
+}
+.banner{
+    width: 100vw;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    float:left;
+}
+.control-holder{
+    width: 7rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 0.7rem;
+    left: calc( 50% - 3rem );
+}
+.dot{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    float:left;
+}
+.dot-on{
+    background: rgba(254,181,18,1);
+}
+.dot:nth-child(n+2){
+    margin-left:1rem;
+}
+/*------------footer-------------*/
+.footer{
+    position: relative;
+    bottom: 0;
+    height: 6.8rem;
+    width: 100%;
+    padding: .3rem 1rem 0 1rem;
+    box-sizing: border-box;
+    border-top:1px solid rgba(0,0,0,0.6);
+}
+.footer-item{
+    width: 20%;
+    float:left;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.footer-item-on{
+    color:rgba(220, 96, 22,1);
+}
+.footer-item img{
+    height: 4rem;
+}
+/*------------footer-------------*/
+
+/*----------content-block-----------*/
+.content-block{
+    width: 100%;
+    height: calc( 100% - 24.8rem );
+    overflow-y: scroll;
+}
+/*----------content-block-----------*/
+
+/*----------release-block----------*/
+.release-block{
+    width: 100%;
+    height: 30rem;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.release-title{
+    width:100%;
+    height:3rem;
+    padding:1rem;
+    box-sizing: border-box;
+}
+.release-title .title-holder{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: calc( 50% - 3rem );
+}
+.more{
+    font-size: 1rem;
+    float:right;
+    line-height: 2rem;
+    margin-right: 2rem;
+}
+.release-item{
+    height: 12.5rem;
+    width: 9rem;
+    margin-top:1rem;
+}
+.release-item p{
+    font-size: 1.3rem;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.middle{
+    margin-left:auto;
+    margin-right:auto;
+}
+.pic-holder{
+    border-radius: 0.5rem;
+    width: 9rem;
+    height: 9rem;
+    background: orange;
+}
+/*----------release-block----------*/
+
+/*----------tobuy-block----------*/
+.tobuy-block{
+    width: 100%;
+    height: auto; 
+}
+.info-line{
+    width: 100%;
+    height: 3rem;
+    padding:1rem;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(169,169,169,0.4);
+}
+.info-left{
+    width: 70%;
+    float: left;
+}
+.info-right{
+    width: 30%;
+    text-align: right;
+    float:right;
+}
+/*----------tobuy-block----------*/

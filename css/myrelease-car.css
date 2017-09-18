@@ -1,0 +1,136 @@
+/*-------------body--------------*/
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*-------------body--------------*/
+
+/*----------header-----------*/
+.header{
+    width:100%;
+    height:4rem;
+    text-align:center;
+    font-size:2rem;
+    line-height:4rem;
+}
+/*----------header-----------*/
+
+
+/*----------content-block-----------*/
+.content-block{
+    width: 100%;
+    height: calc( 100% - 4rem );
+    box-sizing: border-box;
+}
+/*----------content-block-----------*/
+
+/*------------sort---------------*/
+.sort-control{
+    width: 100%;
+    height: 2.6rem;
+    padding:1rem 1.2rem 0rem 1.2rem;
+    box-sizing: border-box;
+    display: table;
+    font-size: 1.4rem;
+}
+.sort-choice{
+    width: 20%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    box-sizing: border-box;
+}
+.sort-on{
+    color:rgba(220, 96, 22,1);
+    border-bottom: 5px solid rgba(220, 96, 22,1);
+}
+/*------------sort---------------*/
+
+/*-----------info-block-------------*/
+.info-block{
+    border-top:2px solid #eee;
+    box-sizing: border-box;
+    margin-top:1px;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding:1rem;
+}
+.person-pic-holder{
+    width:6rem;
+    height:100%;
+    float:left;
+}
+.person-pic{
+    width: 6rem;
+    height:6rem;
+    border-radius: 3rem;
+    background: gray;
+}
+.infos{
+    width: calc( 100% - 8rem );
+    height:100%;
+    float:right;
+}
+.user-name{
+    color:rgba(220, 96, 22,1);
+    font-size: 1.5rem;
+    width: 100%;
+    height:2.2rem;
+}
+.detail-info{
+    border-top: 0.2rem solid #fff;
+    border-left: 1rem solid #fff;
+    border-right: 1rem solid #fff;
+    background: rgba(149,149,149,0.2);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color:gray;
+}
+.detail-info p span{
+    color:rgba(220, 96, 22,1);
+}
+.info-block:after{
+    content:".";
+    display:block;
+    clear:both;
+    height:0;
+    width:0;
+    visibility:hidden;
+}
+/*-----------info-block-------------*/
+
+/*-------control-btn------------*/
+.controllers{
+    width: 100%;
+    padding: 1rem 0;
+    height:4.5rem;
+    box-sizing: border-box;
+    float:left;
+}
+.control{
+    width: 30%;
+    height:2.5rem;
+    border-radius:1.5rem;
+    border:2px solid rgba(220, 96, 22,1);
+    float:left;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color:rgba(220, 96, 22,1);
+}
+.control:nth-child(n+2){
+    margin-left:4%;
+}
+/*-------control-btn------------*/
+

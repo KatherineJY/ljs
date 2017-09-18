@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>car-release</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/car-release.css">
+    <link href="css/mobiscroll.css" rel="stylesheet" />
+    <link href="css/mobiscroll_date.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-item"><a><img src="img/back-icon.png" alt=""></a></div>
+        <div class="header-item page-title">拼车发布</div>
+    </div>
+    <div class="content-block">
+        <div class="info-line">
+            <div class="info-title">出 发 地</div>
+            <input class="long-input" type="text" placeholder="财大东门">
+        </div>
+        <div class="info-line">
+            <div class="info-title">目 的 地</div>
+            <div class="catagory">
+                <p>非遗(地铁站）</p>
+                <div class="catagory-list">
+                    <ul>
+                        <li class="catagory-item"><p>非遗(地铁站）</p></li>
+                        <li class="catagory-item"><p>非遗(地铁站）</p></li>
+                    </ul>
+                </div>
+            </div>
+            <input type="text" class="other-place" placeholder="其他请填写">
+        </div>
+        <div class="info-line">
+            <div class="info-title">出发时间</div>
+            <input id="datetime" class="long-input" type="text" placeholder="2017年1月1日">
+        </div>
+        <div class="info-line">
+            <div class="info-title">需要人数</div>
+            <div class="catagory person">
+                <p>1</p>
+                <div class="catagory-list">
+                    <ul>
+                        <li class="catagory-item"><p>1</p></li>
+                        <li class="catagory-item"><p>2</p></li>
+                        <li class="catagory-item"><p>3</p></li>
+                        <li class="catagory-item"><p>4</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="info-title">已有人数</div>
+            <div class="catagory person">
+                <p>1</p>
+                <div class="catagory-list">
+                    <ul>
+                        <li class="catagory-item"><p>1</p></li>
+                        <li class="catagory-item"><p>2</p></li>
+                        <li class="catagory-item"><p>3</p></li>
+                        <li class="catagory-item"><p>4</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="info-line">
+            <div class="info-title">联系方式</div>
+            <input class="long-input" type="text" placeholder="QQ、微信等">
+        </div>
+    </div>
+    <button class="foot-button"><a>确定发布</a></button>
+    <script src="js/car-release.js"></script>
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/mobiscroll_date.js"></script> 
+    <script src="js/mobiscroll.js"></script> 
+    <script>
+        $("#datetime").mobiscroll().datetime({
+            theme: "android-ics light",
+            lang: 'zh',
+            display:'modal',
+            timeFormat:'HH:ii',
+            timeWheels:'HHii'
+        });
+    </script>
+</html>

@@ -1,0 +1,119 @@
+/*-------------body--------------*/
+html{
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+/*-------------body--------------*/
+
+/*------------header-------------*/
+.header{
+    width: 100%;
+    height:5rem;
+    box-sizing: border-box;
+    padding: 1rem 2rem 1rem 2rem;
+    background: #fff;
+    color: rgba(100, 100, 100,1);
+    border-bottom: 1px solid rgba(149,149,149,1);
+    font-size: 2rem;
+}
+.header-item{
+    height: 3rem;
+    vertical-align: middle;
+}
+.header-item img{
+    height: 100%;
+}
+.icon-left{
+    width: 3rem;
+    float:left;
+}
+.page-title{
+    width: 25rem;
+    position: relative;
+    text-align: center;
+    left: calc( 50% - 15.5rem );
+    color:rgba(220, 96, 22,1);
+    margin: 0 auto;
+}
+.other-icon{
+    width: 3rem;
+    float:right;
+}
+/*------------header-------------*/
+
+/*------------footer-------------*/
+.footer{
+    position: relative;
+    bottom: 0;
+    height: 6.5rem;
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    box-sizing: border-box;
+}
+.footer-item{
+    width: 20%;
+    float:left;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.footer-item-on{
+    color:rgba(220, 96, 22,1);
+}
+.footer-item img{
+    height: 4rem;
+}
+/*------------footer-------------*/
+
+/*----------content-block-----------*/
+.content-block{
+    width: 100%;
+    height: calc( 100% - 11.5rem );
+    overflow-y: scroll;
+    background: #eee;
+}
+/*----------content-block-----------*/
+
+/*----------msg-block--------------*/
+.msg-block{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1.2rem;
+}
+.time-title{
+    width: 15rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    background: rgba(128,128,128,0.6);
+    color:#fff;
+    border-radius: 5px;
+    margin:0 auto;
+    text-align: center;
+}
+.msg{
+    width: clac( 100% - 2rem );
+    height: auto;
+    background: #fff;
+    padding: 0.8rem;
+    margin-top:0.8rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.msg-title{
+    font-size: 1.4rem;
+    height:2rem;
+    color:rgba(220, 96, 22,1);
+}
+.msg-content{
+    font-size: 1.4rem;
+    color:gray;
+    padding: 0.5rem 0.8rem;
+}
+/*----------msg-block--------------*/
